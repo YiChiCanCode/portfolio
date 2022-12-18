@@ -14,3 +14,6 @@ def contact(request):
 def music(request):
 	return render(request, "music.html")
 
+def aboutme(request):
+	return render(request, "aboutme.html")
+

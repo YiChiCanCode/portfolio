@@ -2,9 +2,12 @@
 </head>
 <body>
 	<div class="nav_items">
-			<div><a href="/" class="nav_item">about me</a></div>
+			<br>
+			<div><a href="/" class="nav_item">home</a></div>
 			<br>
 			<div><a href="{{ HTTP_HOST }}/projects" class="nav_item">projects</a></div>
+			<br>
+			<div><a href="{{ HTTP_HOST }}/aboutme" class="nav_item">about me</a></div>
 			<br>
 			<div><a href="{{ HTTP_HOST }}/music" class="nav_item">music</a></div>
 			<br>
@@ -30,11 +33,16 @@
 		font-weight: 200;
 		font-size: 24px;
 		line-height: 82.34%;
-		color: #000000;
+	}
+	
+	.nav_item:hover {
+  		transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		font-weight: 200;
 	}
 
 	.nav_item{
 		text-decoration: none;
+		color: black;
 	}
 
 

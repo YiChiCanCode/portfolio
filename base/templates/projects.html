@@ -6,24 +6,113 @@
 
 	</head>
 	<body>
+		<center class="proj_gallary"><h1>PROJECT GALARY</h1></center>
+		
 		<div class="proj_card">
 			{% load static %}
-			<img src="{% static 'projects/test1.jpg' %}" class="image" alt="My image">
-			<div class="filler"></div>
 			<div class="texts">
-				<div class="title">Going</div>
-				<div>test three</div>
+				<div class="proj_title_big">DisableViolence</div>
+				<br>
+					<video width="100%" height="40%" controls autoplay>
+						{% load static %}
+						<source src="{% static "disableviolence.mp4" %}" type="video/mp4"> </source>
+					</video>
+				<br>
+				<div class="proj_title">What's this app?</div>
+				<div>This is a web application displaying the research result done by Institute of Politics at University of Chicago on the Invent2Prevent Program. </div>
+				<div class="proj_title">What’s my role in this?</div>
+				<div>As a full-stack developer, I collaborated in a team of 3 and created the site using Django, SQLite, HTML/CSS.</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="proj_card">
+			{% load static %}
+			<div class="texts">
+				<div class="proj_title_big">GoingBananas</div>
+				<br>
+					{% load static %}
+					<video width="100%" height="40%" controls autoplay>
+						<source src="{% static "goingbananas.mp4" %}" type="video/mp4"> </source>
+					</video>
+				<br>
+				<div class="proj_title">What's this app?</div>
+				<div>This is a machine learning web application that allows users to understand the ripeness of the fruit based on a fruit picture that they upload.</div>
+				<div class="proj_title">What’s my role in this?</div>
+				<div>As a frontend developer, I designed the app using Figma and used Javascript, HTML/CSS to implement the design.</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="proj_card">
+			{% load static %}
+			<div class="texts">
+				<div class="proj_title_big">All Fun Projects in NLP</div>
+					{% load static %}
+				<br>
+				<div class="proj_title">What does this mean?</div>
+				<div>I love natural language processing. I believe that it’s a way to gain a lot of meaningful insights to current nonintuitive data. As a result, I just love calling different APIs or acquire different data and apply NLP on them!</div>
 			</div>
 		</div>
 
+		<div class="proj_card">
+			{% load static %}
+			<div class="texts">
+				<div class="proj_title_big">Coming soon: Spomoji</div>
+				<br>
+				<div class="proj_title">What's this app?</div>
+				<div>It’s a web application that allows users to generate song-based emojis and share it with friends to better express their feelings. </div>
+				<div class="proj_title">What’s my role in this?</div>
+				<div>I implement the app using Flask and integrate the machine learning model into the application. </div>
+			</div>
+		</div>
+		<br><br>
+		<div class="proj_card">
+			{% load static %}
+			<div class="texts">
+				<div class="proj_title_big">Coming soon: DrinkT3.0</div>
+				<br>
+				<div class="proj_title">What's this app?</div>
+				<div>It’s web application that allows users to consumer their news in their own way. Want to listen to it? Or just watch a summarization of it? We got you!</div>
+				<div class="proj_title">What’s my role in this?</div>
+				<div>As a full stack developer, I implement the web application using Django, mySQLite, HTML/CSS, and calling a lot of cool internal APIs created by Tiptop Technologies.
+				</div>
+			</div>
+		</div>		
+
+		
 	</body>
 </html>
 
 <style>
+	.proj_gallary{
+		color:black;
+		font-family: 'Manrope';
+		font-size: large;
+	}
+
+	.proj_title_big{
+		background-color: black;
+		color:white;
+		font-family: 'Optima';	
+		font-weight: 100;
+		font-size: 30px;			
+	}
+
+	.proj_title{
+		color:black;
+		font-family: 'Optima';	
+		font-weight: 100;
+		font-size: 24px;	
+	}
 
 	.proj_card{
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		text-align: center;
+		height: 40%;
+		background-color: white;
+		margin: auto;
+		width: 40%;
+		padding: 10px;
 	}
 
 	.filler{
@@ -46,8 +135,7 @@
 		flex-direction: column;
 		font-family: 'Manrope';
 		font-style: normal;
-		font-weight: 100;
-		font-size: 24px;
+		font-size: 20px;	
 	}
 
 

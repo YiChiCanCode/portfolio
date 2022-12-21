@@ -9,31 +9,29 @@
 		<link href="https://fonts.googleapis.com/css?family=Meow+Script&display=swap" rel="stylesheet" />
     </head>
     <body>
-        <div>
-            <span class="script">
-                Let's connect!
-            </span>
-            <span class="text">
-				Email <br>
-				yichihuang@uchicago.edu
-   			 </span>
-        </div>
+        <center class="text">
+            <h1>Let's connect</h1>
+            <h2>Email</h2>
+            <span>yichihuang@uchicago.edu</span>
+            <h2>Location</h2>
+            <span>Chicago, IL, USA</span>
+            <h2>Social Media</h2>
+
+            <a href="https://www.instagram.com/chaplin_in_sunset/">
+                {% load static %}
+                <img src="{% static 'insta.png' %}" style="width:30px;height:30px;" alt="My image">
+            </a>
+        </center>
 
     </body>
 </html>
 
 <style>
     .text{
-        position: position;
-        width: 719px;
-        height: 294px;
-        left: 516px;
-        top: 503px;
-
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
-        font-size: 25.3333px;
+        font-size: 20px;
         line-height: 2;
 
         color: #121212;
